@@ -4,7 +4,7 @@ from django.contrib import admin
 from cadastro import models
 
 @admin.register(models.cadastro)
-class GrupoAdmin(admin.ModelAdmin):
+class CadastroAdmin(admin.ModelAdmin):
     list_display = ('nome','cpf','telefone','email','rua','bairro','numero')
     search_fields = ()
     list_filter = ()
